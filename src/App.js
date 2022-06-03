@@ -6,7 +6,6 @@ import { useState } from "react";
 function App() {
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test&appid=735462ecb12cc75157889cb125f090a4";
-  // const api_key = "apikey=yt1dtI2ZeeNj6j2D7HNnVAXe9fhmj0UU&q=";
   return (
     <div className="App">
       <h1> Weather App </h1>
@@ -22,7 +21,17 @@ function App() {
             <p>clouds</p>
           </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <div className="feels">
+            <p>25</p>
+          </div>
+          <div className="humidity">
+            <p>50%</p>
+          </div>
+          <div className="wind">
+            <p>18 km/h</p>
+          </div>
+        </div>
       </div>
     </div>
   );
